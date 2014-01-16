@@ -1,0 +1,500 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+html {
+	background-color:#CCC;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	background-color:#FFF;
+	min-width: 320px;
+	line-height: 1.3;
+}
+
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	}
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	}
+
+p {
+	font-size: 0.8em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+img {
+	width: 100%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+
+header img {
+	width: 50%;
+	margin: 2% 2%;
+	box-shadow: none;
+}
+	
+header {
+	text-align: center;
+}
+
+
+.footerlogo {
+	background-image:url(../images/logo.jpg);
+	float: center;
+	margin-top: 5%;
+}
+
+nav ul {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+nav li {
+	}
+
+nav a {
+	text-decoration:none;
+	font-size: 0.8em;
+	font-style:oblique;
+	color:#000;
+	display: inline-block; 
+	margin: 2%;
+	}
+	
+article{
+	padding-top: 5%;
+		border-bottom: 1px solid #ddd;
+	border-top: 2px solid #fafafa;
+}
+.wrapper {}
+
+.home {
+	background-image:url(http://placehold.it/140x110);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	background-position: 10% 0;
+}
+
+.home h1 {
+	padding: 80% 0 5% 0;
+	color:#E82263;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: center;
+	}
+	
+.home p {
+	padding: 0 5% 5% 5%;
+	text-align: center;
+}
+
+.downloadbutton {
+					width: 40%;
+					padding: 5% 0 5% 30%;
+}
+
+.portfolio {
+	background-image:url;
+	background-repeat:no-repeat;
+	background-size: 55%;
+
+	background-position: 90% 0%;
+}
+
+.home ul {
+	padding: 0 5% 5% 5%;
+	text-align: center;
+}
+
+.home li {
+	padding: 0 5% 30% 5%;
+	text-align: center;
+}
+
+.portfolio h2 {
+	padding: 0;
+	color:#21409A;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: center;
+}
+
+.portfolio p {
+	padding: 10% 15%;
+	text-align: center;
+}
+
+figcaption {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	font-weight:bold;
+	}
+
+figure {
+	margin: 0 0 5% 0;
+	margin-bottom: 10%;
+	text-align: center;
+}
+
+
+.services {
+	background-repeat:no-repeat;
+	background-size: 100%;
+	background-position: 10% 5%;
+	text-align: center;
+	padding-bottom: 2em;
+}
+
+.services h2 {
+	padding: 0;
+	color:#21409A;
+	font-weight:bold;
+	text-aligh: center;
+	margin-bottom: 10%;
+	}
+
+.services p {
+	padding: 0 5% 0 5%;
+	text-align: center;
+	
+}
+	
+.services ul {
+	padding: 0;
+	text-align: center;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.home li,
+.services li {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 0.8em;
+	list-style-type:circle;
+	margin-left: 10%;
+	padding: 0 5% 1% 5%;
+}
+
+footer {
+	padding: 3% 10% 3% 5%;
+ }
+
+footer ul {
+}
+
+footer li, footer a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	text-decoration: none;
+	color:#000;
+	padding: 2% 0;
+	}
+
+footer span {
+	color:#E82263;
+}
+
+
+@media only screen and (min-width: 54em) {
+
+.home p {
+	padding: 0 5% 0 5%;
+	text-align: center;
+}
+
+p {
+	font-size: 0.8em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+nav ul {
+		text-align: center;
+		margin-bottom: 5%;
+}
+	
+nav li {
+		display: inline;
+}
+	
+nav a {
+		text-decoration:none;
+		font-size: 1.3em;
+		font-style:oblique;
+		color:#000;
+		display: inline-block; 
+		margin: 5% 4%;
+}
+		
+		.column1 {
+		float: left;
+		width: 45%;
+	}
+	
+	.column2 {
+		float: right;
+		width: 55%;
+		padding-left: 5%;
+	}
+	
+
+.logo {
+		background-image:url(../images/logo.jpg);
+		width: 18%;
+		float: right;
+		margin: 2% 2%;
+}
+
+.portfolio h2 {
+	padding: 0 15%;
+	color:#21409A;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: left;
+}
+
+.portfolio p {
+	padding: 10% 15%;
+	text-align: left;
+}
+
+img {
+	width: 75%;
+	}
+	
+
+footer {
+	padding: 3% 10% 3% 5%;
+ }
+
+footer ul {
+	float: left;
+	margin-left: 5%;
+}
+
+footer li, footer a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+	text-decoration: none;
+	color:#000;
+	padding: 2% 0;
+	}
+
+footer span {
+	color:#21409A;
+}	
+
+
+.services p {
+	padding: 0.1em;
+	text-align: center;
+}
+
+.services ul {
+	padding: 0;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 8%;
+}
+
+.footerlogo {
+	width: 10%;
+	float: right;
+}	
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1; /* You will get a CSS validator error on this line */
+}
+
+}
+
+
+@media only screen and (min-width: 100em) {
+
+html {
+	background-color:#CCC;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	background-color:#FFF;
+	min-width: 768px;
+}
+
+h1 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	}
+
+h2 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	}
+
+p {
+	font-size: 0.8em;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.logo {
+	background-image:url(../images/logo.jpg);
+	width: %;
+	float: right;
+	margin: 2% 2%;
+
+}
+
+header img {
+	width: 20%;
+	margin: 2% 2%;
+	float: right;
+}
+
+nav ul {
+	text-align: right;
+	margin-bottom: 6%;
+	padding: 3%;	
+}
+
+nav li {
+	display: inline;
+	}
+
+nav a {
+	text-decoration:none;
+	font-size: 1.5em;
+	font-style:oblique;
+	color:#000;
+	display: inline-block; 
+	margin: 5% 4%;
+	}
+	
+.home {
+	background:#fff url(http://placehold.it/140x110) no-repeat 0 40%;
+	background-size: 50%;
+	
+	}
+
+.home h1 {
+	padding: 4% 10% 2% 0;
+	color:#21409A;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align: right;
+	}
+
+
+.home p {
+	padding: 0 5% 0 58%;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+
+.home ul {
+	padding: 0 5% 10% 5%;
+}
+
+.home li,
+.services li {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 1em;
+	list-style-type:circle;
+	margin-left: 60%;
+	padding: 0 5% 1% 5%;
+}
+
+.services li{
+	margin: 0 auto;
+	text-align:left;
+	width: 50%;
+}
+
+.portfolio p {
+	padding: 10% 15%;
+	text-align: left;
+	font-size: 1.2em;
+}
+
+figcaption {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.3em;
+	font-weight:bold;
+	}
+	
+.services h2 {
+	padding: 0;
+	color:#21409A;
+	font-weight:bold;
+	text-aligh: center;
+	margin-bottom: 5%;
+	}
+	
+.services p {
+	padding: 0.1em;
+ 	text-align: center;
+	font-size: 1.2em;
+}
+
+footer {
+	padding: 2% 10% 2% 5%;
+ }
+
+footer ul {
+	float: left;
+	margin-left: 5%;
+}
+
+footer li, footer a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.1em;
+	text-decoration: none;
+	color:#000;
+	padding: 3% 0;
+	}
+
+footer span {
+	color:#21409A;
+}	
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1; /* You will get a CSS validator error on this line */
+}
+.footerlogo {
+	width: 10%;
+	float: right;
+}	
+
+
+}
