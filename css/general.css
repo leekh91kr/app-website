@@ -1,3 +1,19 @@
+.next {
+	border-radius: 10px;
+	border: 3px solide #fffffff;
+	background-color: #E82263;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.previous {
+	border-radius: 10px;
+	border: 3px solide #fffffff;
+	background-color: #E82263;
+	color: #ffffff;
+	cursor: pointer;
+}
+
 .carousel {
 	padding-bottom: 56.23%; /*Image aspect ratio: height / width * 100 * */
 	position: relative;
@@ -21,6 +37,7 @@
 .carousel-buttons {
 	position: absolute;
 	z-index: 1000;
+	
 }
 
 html {
