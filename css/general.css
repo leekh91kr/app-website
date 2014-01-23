@@ -1,7 +1,27 @@
-@charset "UTF-8";
-/* CSS Document */
+.carousel {
+	padding-bottom: 56.23%; /*Image aspect ratio: height / width * 100 * */
+	position: relative;
+}
 
+.carousel-items img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 
+.carousel-items [data-state="current"] {
+	z-index: 100%;
+}
+
+.carousel-items [data-state="incoming"] {
+	z-index: 101;
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+}
 
 html {
 	background-color:#CCC;
@@ -13,6 +33,12 @@ body {
 	background-color:#FFF;
 	min-width: 320px;
 	line-height: 1.3;
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 h1 {
@@ -94,13 +120,15 @@ article{
 	}
 	
 .home p {
-	padding: 0 5% 5% 5%;
+	padding: 0 5% 0 5%;
 	text-align: center;
 }
 
 .downloadbutton {
-					width: 40%;
-					padding: 5% 0 5% 30%;
+	width: 40%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .portfolio {
@@ -119,6 +147,7 @@ article{
 .home li {
 	padding: 0 5% 30% 5%;
 	text-align: center;
+	
 }
 
 .portfolio h2 {
@@ -180,7 +209,7 @@ figure {
 .services li {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 0.8em;
-	list-style-type:circle;
+	list-style-type: none;
 	margin-left: 10%;
 	padding: 0 5% 1% 5%;
 }
@@ -420,7 +449,7 @@ nav a {
 .services li {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 1em;
-	list-style-type:circle;
+	list-style-type: none;
 	margin-left: 60%;
 	padding: 0 5% 1% 5%;
 }
