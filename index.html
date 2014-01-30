@@ -1,93 +1,179 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang=en-ca>
 <head>
-<meta charset="UTF-8">
-
-<title>Website for GuardiOwl App</title>
-	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/general.css" rel="stylesheet">
-
+	<meta charset=utf-8>
+	<title>Club Monaco Virtual Styling App</title>
+  	
+	<link href="css/responsive-site.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/dialog-polyfill.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+    
+	<meta name="handheldfriendly" content="true">
+	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width,initial-scale=1,target-densitydpi=device-dpi">
 </head>
 
-<body>
-
-	<header>
-	
-		<a href="index.html"><img src="img/icon.png" alt="Logo"></a>
-		
-		<nav>
+<body id="top">
+	<header class="masthead clearfix">
+		<div class="masthead-top">
+			<h1 class="logo-wrapper"><a href="index.html" class="logo">Galilean Moons</a></h1>
+			<a href="#nav" class="nav-btn" data-state="inactive">Navigate</a>
+		</div>
+		<nav class="nav nav-top" data-state="collapsed">
 			<ul>
-				<li><a href="#portfolio">1st page</a></li>
-				<li><a href="#services">2nd page</a></li>
-               <li><a href="#services">3rd page</a></li>
-               <li><a href="#services">4th page</a></li>
+				<li><a href="#">Screen shots</a></li>
+				<li><a href="#">About app</a></li>
+				<li><a href="#">Buy the app</a></li>
+				<li><a href="#">Watch video</a></li>
 			</ul>
 		</nav>
-	
 	</header>
     
-	<div class="wrapper"> 
-	
-		<article class="home">
+       <div class="carousel">
+                <div class="carousel-items">
+                        <img data-state="current" src="img/argyle-0.png" alt="">
+                        <img src="img/argyle-1.png" alt="">
+                        <img src="img/argyle-2.png" alt="">
+                        <img src="img/argyle-3.png" alt="">
+                        <img src="img/argyle-4.png" alt="">
+                </div>
+                <div class="carousel-buttons">
+                        <button class="next">Next</button>
+                        <button class="prev">Previous</button>
+                </div>
+        </div>
+
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="js/fade.js"></script>
+
+	<p class="lede">This app is Club Monaco's virtual styling app. You can try whatever you want. This app will make you stylish.</p>
+
+	<h2>Screen Shots</h2>
+
+	<ol class="moon-list">
+		<li>
+			<a href="#">
+				<figure>
+					<img src="img/argyle-0.jpg" alt="">
+					<figcaption>Main page</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<figure>
+					<img src="img/argyle-4.png" alt="">
+					<figcaption>Details</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<figure>
+					<img src="img/argyle-3.png" alt="">
+					<figcaption>Chooser</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<figure>
+					<img src="img/argyle-2.png" alt="">
+					<figcaption>Cart</figcaption>
+				</figure>
+			</a>
+		</li>
+	</ol>
+
+	<h2>App Statistics</h2>
+	<ol class="stats-list">
+		<li>
+			<h3><a href="#">What features are included in the Club Monaco App?</a></h3>
+			<dl class="stats">
+				<dt>Category</dt>
+				<dd>Fashion</dd>
+				<dt>Updated</dt>
+				<dd>Jan 16, 2014</dd>
+				<dt>Version</dt>
+				<dd>2.10</dd>
+              	<dt>Size</dt>
+				<dd>33.9 MB</dd>
+				<dt>Languages</dt>
+				<dd>English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Simplified Chinese, Spanish, Swedish</dd>
+				<dt>Seller</dt>
+				<dd>Kyounghee Lee Design.</dd>
+			</dl>
+		</li>
         
-			<h1>meet Guardiowl,</h1>
-			
-			<p>Mr.GuardiOwl will save your children. Your children's new Chief of Security. Don't worry.
-			
-	<ul>
-			
-		<li>Help Them Live endeavors to deliver food & other basic necessities to the most vulnerable sectors of the North Korean society, especially orphaned children, school children in impoverished areas, the handicapped, the elderly and single parents. Every effort is made to find partners of the highest integrity with the utmost in transparent monitoring methods available under admittedly difficult circumstances. Most food aid, at present, is in the form of baked bread rolls.</li>
-		
-		<li>Help Them Live also endeavors to provide shelter, food, very basic health and hygiene assistance to North Korean refugees in China. It does so based on need only and without prejudice of the refugee’s creed or lack thereof. However, it is our belief and operating principle that spiritual hope, faith and direction are of equal importance to physical sustenance. Each refugee in our shelters receives a Bible and an introduction to the Christian faith. Acceptance is a personal matter.</li>
-		
-	</ul>
+		<li>
+			<h3><a href="#">Compatibility</a></h3>
+			<dl class="stats">
+				<dt>Compatibility</dt>
+				<dd>Compatible with iPhone 4, iPhone 4S, iPhone 5, iPhone 5c, iPhone 5s, iPad 2 Wi-Fi, iPad 2 Wi-Fi + 3G, iPad Wi-Fi (3rd generation), iPad Wi-Fi + Cellular (3rd generation), iPad Wi-Fi (4th generation), iPad Wi-Fi + Cellular (4th generation), iPad mini Wi-Fi, iPad mini Wi-Fi + Cellular, iPad Air, iPad Air Wi-Fi + Cellular, iPad mini with Retina display, iPad mini with Retina display Wi-Fi + Cellular, iPod touch (4th generation), and iPod touch (5th generation). This app is optimized for iPhone 5.</dd>
+			</dl>
+		</li>
+        
+		<li>
+			<h3><a href="#">Customer Ratings</a></h3>
+			<dl class="stats">
+				<dt>Current Version</dt>
+				<dd>53 Ratings</dd>
+				<dt>All Versions</dt>
+				<dd>603 Ratings</dd>
+			</dl>
+		</li>
+        
+		<li>
+			<h3><a href="#">Top In-App Purchases</a></h3>
+			<dl class="stats">
+				<dt>Cluster of Diamonds</dt>
+				<dd>$4.99</dd>
+				<dt>Handful of Diamonds</dt>
+				<dd>$1.99</dd>
+				<dt>Pile of Diamonds</dt>
+				<dd>$9.99</dd>
+             	<dt>Mound of Diamonds</dt>
+				<dd>$19.99</dd>
+				<dt>Chest of Diamonds</dt>
+				<dd>$49.99</dd>
+				<dt>Trunk of Diamonds</dt>
+				<dd>$99.99</dd>
+			</dl>
+		</li>
+	</ol>
 
-</p>
-	</article>	
-		
-		<a id="portfolio"></a>
-		
-		<article class="portfolio clearfix">
-			
-			
-			<div class="column1">
-	
-			</div>
-            
-    <div class="carousel">
-	<div class="carousel-items">
-    	<img data-state="current" src="img/1.jpg" alt="">
-        <img src="img/1.jpg" alt="">
-        <img src="img/2.jpg" alt="">
-        <img src="img/3.jpg" alt="">
-        <img src="img/4.jpg" alt="">
-    </div>
+
+	<h2>Video Clip</h2>
     
-        <div class="carousel-buttons">
-    	<button class="next">Next</button>
+    <button id="btn-open">Open Video</button>
     
-    <div class="carousel-buttons">
-    	<button class="previous">Previous</button>
-    </div>
-    
-    </div>
-    
-</div>
-    
-   
-	<footer class="clearfix">
-	
-		<ul>
-			<li><span>Phone</span> 1.613.883.1472</li>
-			<li><span>Email</span> <a href="mailto:name@domain.com">guardiowl@live.com</a></li>
-			<li><span>Facebook</span> <a href="facebook.com/name">facebook.com/guardiowl/a></li>
-           <li>© 2014 Kyounghee Lee Design</li>
-		</ul>
-	
+    <dialog id="video">
+    	<button id="btn-close">x</button>
+       <div id="video-placeholder"></div>
+    </dialog>
+
+	<footer class="site-footer">
+		<nav id="nav" class="nav nav-bottom">
+			<ul>
+				<li><a href="#">Screen shots</a></li>
+				<li><a href="#">About app</a></li>
+				<li><a href="#">Buy the app</a></li>
+				<li><a href="#">Watch video</a></li>
+			</ul>
+		</nav>
+
+		<p class="copyright">© 2014 Club Monaco</p>
+		<p class="source"><a href="http://en.wikipedia.org/wiki/Galilean_moons">Source: Wikipedia</a></p>
+		<p class="top-link"><a href="#top">Top</a></p>
+        
 	</footer>
-    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/main.js"></script>
-
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="js/dialog-polyfill.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/fade.js"></script>
+	<script src="js/slide.js"></script>
+	<script src="js/footer-toggle-hybrid.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+.carousel {
+        overflow: hidden;
+        position: relative;
+        padding: 0 0 52.6%;
+}
+
+.carousel img {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+}
+
+.carousel-items [data-state="current"] {
+        z-index: 100;
+}
+
+.carousel-items [data-state="incoming"] {
+        z-index: 101;
+}
+
+.carousel-buttons {
+        position: absolute;
+        z-index: 1000;
+		/*버튼 디자인에 이미를 넣엇 되게하고싶은데 어떠케 하는거징?*/
+}
