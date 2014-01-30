@@ -4,10 +4,15 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-.bd a.prev-btn{
-	background:url('img/arrow-prev.png');left:-24px}
-.bd a.next-btn{
-	background:url('img/arrow-next.png');left:598px}
+.bd a.prev-btn {
+	background:url('img/arrow-prev.png');
+	left:-24px
+}
+
+.bd a.next-btn {
+	background:url('img/arrow-next.png');
+	left:598px
+}
 
 * {
 	-moz-box-sizing: border-box;
