@@ -3,7 +3,7 @@ var $placeholder = $('#video-placeholder');
 
 dialogPolyfill.registerDialog($dialog.get(0));
 
-$('#btn-open').on('click' , function () {
+$('.btn-open').on('click' , function () {
 	$placeholder.html('<iframe src="http://player.vimeo.com/video/81256903?color=c9ff23&amp;autoplay=1" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>');
 	/*
 	.get() returns the native Javascript element for us to access

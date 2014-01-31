@@ -4,13 +4,30 @@
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
 
-.bd a.prev-btn {
-	background:url('img/arrow-prev.png');
+.btn-open,
+.btn-open:link,
+.btn-open:visited {
+	background:url('../img/video_play_button.png') norepeat;
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+	border: 0;
+	overflow: hidden;
+	text-indent: 100%;
+}
+
+.prev-next {
+	position: absolute;
+	z-index: 2000;
+}
+
+.prev-btn {
+	background:url('../img/arrow-prev.png');
 	left:-24px
 }
 
-.bd a.next-btn {
-	background:url('img/arrow-next.png');
+.next-btn {
+	background:url('../img/arrow-next.png');
 	left:598px
 }
 
