@@ -1,0 +1,144 @@
+body {
+	marign: 0;
+	padding: 0;
+	font: normal 100%/1.5 Georgia, serif;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 10rem 0;
+}
+
+.orbit-section {
+	background-color: #9f221b;
+}
+
+.planet-wrapper {
+	position: relative;
+}
+
+.planet {
+	width: 100px;
+}
+
+.rocket {
+	position: absolute;
+	left: 50%;
+	width: 40px;
+	margin-left: -20px; /*가운데로 만들어주기위해서 한거야. 왜냐면 안그러면 오른쪽으로 치우쳐져있으니까 */
+	top: -40px; /*이건 로켓을 위로 올려주기위해서. 로켓이 이거 없으면 원래는 지구본 아래에있음 */
+	/*
+	DON'T FORGET THE REST OF THE VENDOR PREFIXES
+	-ms-animation
+	-moz-animation
+	-0-animation
+	-webkit-animation
+	animation (without vendor prefix)
+	*/
+	-webkit-transform-origin: 50% 90px;
+	-webkit-animation: rocket-rotate 6s linear infinite/*이걸로하면 계속 도는거고 한바퀴 세바퀴 이런식으로 원할때는 숫자3 이렇게 써주면돼요. 그리고 앞에 웹킷을 넣어주는 이유는 새로운 테크널러지라서 모든 브라우져에서 다 안돼기때문에*/;
+	/* 위에 내용 아래내용과 같은데 간추려서 쓴것임
+	animation-name: rocket-rotate;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	*/
+}
+
+@-webkit-keyframes rocket-rotate { /*animation효과 주기위한 섹션*/
+	
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	
+	100% {
+		-webkit-transform: rotate(-360deg/*여기서 -360을 준 이유는 원래대로라면 시계방향으로 움직여 로켓이. 반대로 가게 해주기위해서 마이너스를 넣어줘야함*/);
+	}
+	
+}
+
+.sun {
+	width: 300px;
+}
+
+.dipper-section {
+	background-color: #c7c0ae;
+}
+
+.dipper {
+	width: 240px;
+	opacity: 0;
+}
+
+.js-dipper-animate {
+	-webkit-animation: dipper-fade 2s linear 1 forwards;
+	/*
+	animation-fill-mode: forwards;
+	Force the eleent to keep its state after the animation completes therefore matching the styles of the last frame of animation
+	*/
+}
+
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.ships-section {
+	background-color: #f6a500;
+}
+
+.ships {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.ships li {
+	display: inline-block;
+	margin: 0 2rem;
+}
+
+.ships img {
+	width: 140px;
+	opacity: 0;
+	-webkit-trasform: translateY(140px);
+}
+
+@-webkit-keyframes ship-fly {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(140px);
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0px);
+	}
+}
+
+.js-ships-animate {
+	-webkit-animation: ship-fly 1s ease-out 1 forwards;
+}
+
+.js-ship-delay-1 {
+	-webkit-animation-delay: 100ms;
+}
+
+.js-ship-delay-2 {
+	-webkit-animation-delay: 200ms;
+}
+
+.js-ship-delay-3 {
+	-webkit-animation-delay: 250ms;
+}

@@ -22,12 +22,12 @@
 }
 
 .prev-btn {
-	background:url('../img/arrow-prev.png');
+	background:url('../img/arrow-prev.png') norepeat;
 	left:-24px
 }
 
 .next-btn {
-	background:url('../img/arrow-next.png');
+	background:url('../img/arrow-next.png') norepeat;
 	left:598px
 }
 
