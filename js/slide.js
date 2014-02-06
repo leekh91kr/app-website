@@ -1,6 +1,6 @@
 var $items = $('.carousel-items img');
 
-$('.next').on('click', function () {
+$('.next-btn').on('click', function () {
         var current = $items.filter('[data-state="current"]').index();
         var next = current + 1;
 
@@ -27,7 +27,7 @@ $('.next').on('click', function () {
         );
 });
 
-$('.prev').on('click', function () {
+$('.prev-btn').on('click', function () {
         var current = $items.filter('[data-state="current"]').index();
         var prev = current - 1;
 

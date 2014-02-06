@@ -7,7 +7,7 @@
 .btn-open,
 .btn-open:link,
 .btn-open:visited {
-	background:url('../img/video_play_button.png') norepeat;
+	background:url('../img/video_play_button.png') no-repeat;
 	display: inline-block;
 	width: 160px;
 	height: 160px;
@@ -19,16 +19,58 @@
 .prev-next {
 	position: absolute;
 	z-index: 2000;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	top: 50%;
+	position: absolute;
 }
 
-.prev-btn {
-	background:url('../img/arrow-prev.png') norepeat;
-	left:-24px
+.prev-btn,
+.prev-btn:link,
+.prev-btn:visited {
+	background:url('../img/arrow-prev.png') no-repeat;
+	left: 0;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	width: 25px;
+	height: 45px;
+	border: 0;
+	top: 0%;
+	position: absolute;
+	float: left;
 }
 
-.next-btn {
-	background:url('../img/arrow-next.png') norepeat;
-	left:598px
+.next-btn
+ {
+	background:url('../img/arrow-next.png') no-repeat;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	width: 25px;
+	height: 45px;
+	border: 0;
+	top: 0%;
+	position: absolute;
+	right: 0;
+	
+}
+
+.next-btn
+.next-btn:link,
+.next-btn:visited {
+	background:url('../img/arrow-next.png') no-repeat;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	width: 25px;
+	height: 45px;
+	border: 0;
+	top: 0%;
+	position: absolute;
+	right: 0;
+	
 }
 
 * {
